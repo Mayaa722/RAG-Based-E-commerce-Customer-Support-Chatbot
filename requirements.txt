@@ -1,0 +1,30 @@
+# Core
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+joblib>=1.3
+
+# Datasets (HuggingFace Hub access)
+datasets>=2.19
+
+# Module 2: Sentiment / Emotion (BiLSTM)
+torch>=2.1
+
+# Module 4: RAG
+sentence-transformers>=2.7
+faiss-cpu>=1.8
+groq>=0.9
+qdrant-client>=1.9        # optional, only needed if using QdrantStore instead of FAISS
+
+# Deployment
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+
+# Notebooks
+jupyter>=1.0
+nbconvert>=7.16
+ipykernel>=6.29
+
+# Optional / development
+langdetect>=1.0.9         # quick sanity-check baseline against Module 1
